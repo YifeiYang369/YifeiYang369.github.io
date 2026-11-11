@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Yifei Yang — Computer Science @ U of T | Software Developer</title>
+<meta name="description" content="Yifei Yang (杨逸飞) — Third-year (junior) Honours B.Sc. Computer Science student at the University of Toronto (Class of 2028). Software developer building AI-powered fintech, event discovery apps, and recommendation systems. Open to Summer 2027 internships in SWE, data, quant & AI." />
+<meta name="keywords" content="Yifei Yang, 杨逸飞, University of Toronto, Computer Science, software developer, Toronto, Savi Finance, internship" />
+<meta name="author" content="Yifei Yang" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Yifei Yang — Computer Science @ University of Toronto" />
+<meta property="og:description" content="Software developer building AI-powered fintech and full-stack apps. U of T CS '28 · Toronto · Open to Summer 2027 internships." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Yifei Yang — CS @ U of T" />
+<meta name="twitter:description" content="Software developer · AI fintech · Full-stack · Toronto" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Yifei Yang",
+  "alternateName": "杨逸飞",
+  "jobTitle": "Computer Science Student & Software Developer",
+  "email": "mailto:yif.yang@mail.utoronto.ca",
+  "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Toronto" },
+  "sameAs": [
+    "https://github.com/YifeiYang369",
+    "https://www.linkedin.com/in/yifei-yang-42749b32a"
+  ],
+  "knowsLanguage": ["English", "Chinese"],
+  "knowsAbout": ["Java", "Python", "JavaScript", "Node.js", "Machine Learning", "Full-Stack Development", "API Integration"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#e8edf8; --bg2:#d9e2f2; --surface:#ffffff; --surface2:#edf3ff;
+    --ink:#081026; --ink2:#2a3a5c; --muted:#5a6b8c;
+    --line:#bfcde6; --line2:#93a9cf;
+    --accent:#0091d9; --accent-ink:#0072bc; --accent-soft:#d3f1ff;
+    --lime:#5db800; --lime-ink:#3f8500; --lime-soft:#e6f9c9;
+    --pink:#e0248f; --pink-soft:#ffe0f1;
+    --violet:#6d3df5; --violet-soft:#e7dfff;
+    --amber:#dd7d00; --amber-soft:#ffe9bf;
+    --grad:linear-gradient(118deg,#0086d6 0%,#00b8c4 48%,#69c400 100%);
+    --grad-hot:linear-gradient(118deg,#6d3df5 0%,#e0248f 55%,#ff7a1a 100%);
+    --term-bg:#060a1c; --term-ink:#d9f6ff; --term-dim:#7d8db0;
+    --term-green:#b6f34c; --term-amber:#ffd23f; --term-cyan:#3fe0ff; --term-pink:#ff6ec7;
+    --shadow:0 18px 44px -16px rgba(0,90,190,.38);
+    --glow:0 0 0 1px rgba(63,224,255,.35), 0 22px 55px -16px rgba(0,150,255,.5);
+    --radius:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#04060f; --bg2:#070b1d; --surface:#0c1329; --surface2:#111b38;
+      --ink:#f0f6ff; --ink2:#c3d4f2; --muted:#8ea2c6;
+      --line:#20305a; --line2:#35497e;
+      --accent:#2fd8ff; --accent-ink:#6fe8ff; --accent-soft:#0a2c42;
+      --lime:#b6f34c; --lime-ink:#cdfb7e; --lime-soft:#243a08;
+      --pink:#ff6ec7; --pink-soft:#3d1030;
+      --violet:#a78bfa; --violet-soft:#241448;
+      --amber:#ffc233; --amber-soft:#33260a;
+      --term-bg:#03061a; --term-ink:#d9f6ff; --term-dim:#66779f;
+      --shadow:0 18px 48px -16px rgba(0,0,0,.75);
+      --glow:0 0 0 1px rgba(63,224,255,.4), 0 22px 60px -14px rgba(0,170,255,.55);
+    }
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation:none!important; transition:none!important} }
+  body{margin:0; background:radial-gradient(1100px 480px at 85% -60px, color-mix(in srgb, var(--accent) 16%, transparent), transparent 60%), radial-gradient(900px 420px at -10% 30%, color-mix(in srgb, var(--lime) 11%, transparent), transparent 60%), var(--bg); color:var(--ink); font-family:"Manrope",system-ui,sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden}
+  h1,h2,h3{font-family:"Sora",sans-serif; line-height:1.12; margin:0}
+  .mono{font-family:"JetBrains Mono",monospace}
+  a{color:var(--accent-ink)}
+  button,[role="button"],select,summary,input:not([type="checkbox"],[type="radio"]){min-height:2rem}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 20px}
+  ::selection{background:var(--accent); color:#fff}
+
+  /* ---------- top bar ---------- */
+  .topbar{position:sticky; top:0; z-index:50; backdrop-filter:blur(12px); background:color-mix(in srgb, var(--bg) 84%, transparent); border-bottom:1px solid var(--line)}
+  .topbar-in{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 0}
+  .brand{display:flex; align-items:center; gap:10px; font-family:"Sora",sans-serif; font-weight:800; font-size:17px; color:var(--ink); text-decoration:none}
+  .brand .dot{width:34px; height:34px; border-radius:9px; background:var(--grad); color:#fff; text-shadow:0 1px 2px rgba(0,30,60,.35); display:grid; place-items:center; font-family:"JetBrains Mono",monospace; font-size:14px; font-weight:600; box-shadow:0 6px 16px -6px rgba(0,150,220,.7)}
+  .nav{display:flex; gap:2px; flex-wrap:wrap}
+  .nav a{color:var(--ink2); text-decoration:none; font-size:14px; font-weight:600; padding:8px 11px; border-radius:8px; min-height:36px; display:inline-flex; align-items:center}
+  .nav a:hover{background:var(--surface2); color:var(--ink)}
+  .nav a.cta{background:var(--grad); color:#fff; text-shadow:0 1px 2px rgba(0,30,60,.35); box-shadow:0 6px 18px -6px rgba(0,150,220,.65)}
+  .nav a.cta:hover{filter:brightness(1.1) saturate(1.15); color:#fff}
+  @media (max-width:640px){ .nav a:not(.cta){display:none} }
+
+  /* ---------- hero ---------- */
+  .hero{position:relative; padding:56px 0 8px; overflow:hidden}
+  .hero-grid-bg{position:absolute; inset:0; pointer-events:none; opacity:.5;
+    background-image:linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size:44px 44px;
+    mask-image:radial-gradient(ellipse 90% 70% at 30% 20%, black 30%, transparent 75%);
+    -webkit-mask-image:radial-gradient(ellipse 90% 70% at 30% 20%, black 30%, transparent 75%)}
+  .hero-in{position:relative; display:grid; grid-template-columns:1.05fr .95fr; gap:36px; align-items:center}
+  @media (max-width:900px){ .hero-in{grid-template-columns:1fr} }
+  .status-pill{display:inline-flex; align-items:center; gap:8px; background:var(--surface); color:var(--accent-ink); border:1.5px solid var(--accent); font-size:13px; font-weight:700; padding:6px 12px; border-radius:999px; box-shadow:0 4px 16px -6px rgba(0,150,255,.55)}
+  .pulse{width:8px; height:8px; border-radius:50%; background:var(--accent); animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb, var(--accent) 45%, transparent)} 70%{box-shadow:0 0 0 7px transparent} 100%{box-shadow:0 0 0 0 transparent}}
+  .hero h1{font-size:clamp(42px,6.5vw,72px); font-weight:800; letter-spacing:-.02em; margin:18px 0 6px}
+  .hero h1 .cn{font-size:.52em; font-weight:600; color:var(--pink); letter-spacing:.06em; vertical-align:.32em; margin-left:10px; white-space:nowrap}
+  .type-line{font-family:"JetBrains Mono",monospace; font-size:clamp(15px,2.4vw,20px); color:var(--accent-ink); min-height:1.6em; font-weight:600}
+  .type-line .caret{display:inline-block; width:9px; height:1.05em; background:var(--accent); vertical-align:-.18em; margin-left:2px; animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .hero p.lede{color:var(--ink2); font-size:17.5px; max-width:52ch; margin:14px 0 0}
+  .hero p.lede strong{color:var(--ink)}
+  .hero-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:26px}
+  .btn{display:inline-flex; align-items:center; gap:8px; min-height:44px; padding:10px 18px; border-radius:11px; font-weight:700; font-size:15px; text-decoration:none; border:1px solid var(--line2); background:var(--surface); color:var(--ink); cursor:pointer; font-family:inherit; transition:transform .15s, box-shadow .15s}
+  .btn:hover{transform:translateY(-2px); box-shadow:var(--shadow)}
+  .btn.primary{background:var(--grad); color:#fff; border-color:transparent; text-shadow:0 1px 2px rgba(0,30,60,.3); box-shadow:0 10px 24px -8px rgba(0,150,220,.6)}
+  .btn svg{width:17px; height:17px; flex:none}
+  .hero-meta{display:flex; gap:18px; flex-wrap:wrap; margin-top:22px; font-size:13.5px; color:var(--muted); font-weight:600}
+  .hero-meta span{display:inline-flex; align-items:center; gap:6px}
+  .hero-meta svg{width:15px; height:15px}
+
+  /* terminal */
+  .terminal{background:var(--term-bg); border-radius:var(--radius); box-shadow:var(--glow); overflow:hidden; border:1px solid rgba(63,224,255,.45); transform:rotate(.6deg)}
+  .term-head{display:flex; align-items:center; gap:7px; padding:11px 14px; border-bottom:1px solid #262b20}
+  .term-head i{width:11px; height:11px; border-radius:50%; display:block}
+  .term-head .r{background:#f87171}.term-head .y{background:#fbbf24}.term-head .g{background:#a3e635}
+  .term-head span{margin-left:8px; font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--term-dim)}
+  .term-body{padding:18px 18px 20px; font-family:"JetBrains Mono",monospace; font-size:13.5px; line-height:1.75; color:var(--term-ink); min-height:308px; white-space:pre-wrap; word-break:break-word}
+  .term-body .k{color:var(--term-pink)} .term-body .s{color:var(--term-amber)} .term-body .f{color:var(--term-cyan)} .term-body .c{color:var(--term-dim)} .term-body .g{color:var(--term-green)}
+  .term-body .caret{display:inline-block; width:8px; height:1em; background:var(--term-green); vertical-align:-.12em; animation:blink 1s steps(1) infinite}
+
+  /* stats strip */
+  .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:44px 0 0}
+  @media (max-width:760px){ .stats{grid-template-columns:repeat(2,1fr)} }
+  .stat{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:18px; border-top:4px solid var(--accent)}
+  .stat:nth-child(2){border-top-color:var(--lime)}
+  .stat:nth-child(3){border-top-color:var(--pink)}
+  .stat:nth-child(4){border-top-color:var(--violet)}
+  .stat b{font-family:"Sora",sans-serif; font-size:27px; display:block; letter-spacing:-.01em}
+  .stat b em{font-style:normal; color:var(--accent-ink)}
+  .stat:nth-child(2) b em{color:var(--lime-ink)}
+  .stat:nth-child(3) b em{color:var(--pink)}
+  .stat:nth-child(4) b em{color:var(--violet)}
+  .stat span{font-size:13px; color:var(--muted); font-weight:600}
+
+  /* sections */
+  section{padding:64px 0 4px}
+  .sec-head{display:flex; align-items:baseline; gap:14px; margin-bottom:8px}
+  .sec-head .no{font-family:"JetBrains Mono",monospace; color:var(--pink); font-size:14px; font-weight:600}
+  .sec-head h2{font-size:clamp(26px,4vw,34px); font-weight:800; letter-spacing:-.015em}
+  .sec-sub{color:var(--muted); max-width:62ch; margin:0 0 26px}
+
+  /* projects */
+  .filters{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px}
+  .chip{border:1px solid var(--line2); background:var(--surface); color:var(--ink2); border-radius:999px; padding:8px 15px; min-height:38px; font:600 13.5px "Manrope",sans-serif; cursor:pointer}
+  .chip[aria-pressed="true"]{background:var(--grad); color:#fff; border-color:transparent; text-shadow:0 1px 2px rgba(0,30,60,.3)}
+  .proj-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+  @media (max-width:900px){ .proj-grid{grid-template-columns:1fr 1fr} }
+  @media (max-width:600px){ .proj-grid{grid-template-columns:1fr} }
+  .proj{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:22px; display:flex; flex-direction:column; gap:10px; transition:transform .18s, box-shadow .18s}
+  .proj:hover{transform:translateY(-4px); box-shadow:var(--shadow)}
+  .proj.hidden{display:none}
+  .proj .tagrow{display:flex; justify-content:space-between; align-items:center; gap:8px}
+  .proj .cat{font-family:"JetBrains Mono",monospace; font-size:11.5px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--accent-ink); background:var(--accent-soft); padding:4px 9px; border-radius:6px}
+  .proj-grid .proj:nth-child(1) .cat{color:var(--pink); background:var(--pink-soft)}
+  .proj-grid .proj:nth-child(3) .cat{color:var(--violet); background:var(--violet-soft)}
+  .proj-grid .proj:nth-child(1) .metric em{color:var(--pink)}
+  .proj-grid .proj:nth-child(3) .metric em{color:var(--violet)}
+  .proj .when{font-size:12.5px; color:var(--muted); font-weight:600; white-space:nowrap}
+  .proj h3{font-size:19px; font-weight:700}
+  .proj p{margin:0; color:var(--ink2); font-size:14.5px; flex:1}
+  .stack{display:flex; flex-wrap:wrap; gap:6px}
+  .stack span{font-family:"JetBrains Mono",monospace; font-size:11.5px; border:1px solid var(--line2); border-radius:6px; padding:3px 8px; color:var(--ink2)}
+  .proj .metric{border-top:1px dashed var(--line2); padding-top:10px; font-size:13.5px; font-weight:700; color:var(--ink)}
+  .proj .metric em{font-style:normal; color:var(--accent-ink)}
+
+  /* experience timeline */
+  .timeline{border-left:2px solid var(--line2); margin-left:6px; padding-left:26px; display:grid; gap:30px}
+  .tl-item{position:relative}
+  .tl-item::before{content:""; position:absolute; left:-33px; top:7px; width:12px; height:12px; border-radius:50%; background:var(--grad); border:3px solid var(--bg); box-shadow:0 0 10px rgba(0,190,255,.65)}
+  .tl-item .when{font-family:"JetBrains Mono",monospace; font-size:12.5px; color:var(--accent-ink); font-weight:600}
+  .tl-item h3{font-size:18px; margin:4px 0 2px}
+  .tl-item .org{color:var(--muted); font-weight:700; font-size:14px; margin-bottom:6px}
+  .tl-item p{margin:0; color:var(--ink2); font-size:14.5px; max-width:68ch}
+  .tl-item ul{margin:6px 0 0; padding-left:18px; color:var(--ink2); font-size:14.5px}
+  .tl-item li{margin:3px 0}
+
+  /* skills */
+  .skill-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+  @media (max-width:820px){ .skill-grid{grid-template-columns:1fr} }
+  .skill-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:20px}
+  .skill-card h3{font-size:15px; font-family:"JetBrains Mono",monospace; font-weight:600; color:var(--accent-ink); margin-bottom:12px}
+  .skill-grid .skill-card:nth-child(2) h3{color:var(--lime-ink)}
+  .skill-grid .skill-card:nth-child(3) h3{color:var(--pink)}
+  .skill-card .stack span{font-size:12.5px; padding:5px 10px}
+  .course-list{display:flex; flex-wrap:wrap; gap:6px; margin-top:14px}
+  .award{display:flex; gap:14px; align-items:flex-start; background:var(--amber-soft); border:1px solid color-mix(in srgb, var(--amber) 30%, transparent); border-radius:var(--radius); padding:18px 20px; margin-top:14px}
+  .award svg{width:22px; height:22px; flex:none; color:var(--amber); margin-top:2px}
+  .award b{font-family:"Sora",sans-serif}
+  .award p{margin:2px 0 0; color:var(--ink2); font-size:14.5px}
+
+  /* about */
+  .about-grid{display:grid; grid-template-columns:1.2fr .8fr; gap:14px}
+  @media (max-width:820px){ .about-grid{grid-template-columns:1fr} }
+  .about-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:24px}
+  .about-card p{color:var(--ink2); margin:0 0 12px}
+  .about-card p:last-child{margin-bottom:0}
+  .fact-list{list-style:none; margin:0; padding:0; display:grid; gap:0}
+  .fact-list li{display:flex; justify-content:space-between; gap:14px; padding:10px 0; border-bottom:1px dashed var(--line2); font-size:14.5px}
+  .fact-list li:last-child{border-bottom:none}
+  .fact-list .k{color:var(--muted); font-weight:600}
+  .fact-list .v{font-weight:700; text-align:right}
+
+  /* contact */
+  .contact-band{margin:64px 0 54px; background:linear-gradient(125deg,#050d2b 0%,#073a63 42%,#0a4a3a 78%,#2a4d05 100%); color:#f2f8ff; border:1px solid rgba(63,224,255,.4); box-shadow:0 24px 60px -20px rgba(0,120,255,.55); border-radius:20px; padding:38px 30px; position:relative; overflow:hidden}
+  .contact-band h2{font-size:clamp(24px,4vw,34px); font-weight:800; max-width:22ch}
+  .contact-band p{opacity:.78; max-width:56ch}
+  .contact-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:22px}
+  .contact-band .btn{background:rgba(255,255,255,.06); color:#f2f8ff; border-color:rgba(160,220,255,.45)}
+  .contact-band .btn.primary{background:var(--grad-hot); border-color:transparent; color:#fff; text-shadow:0 1px 2px rgba(40,0,30,.35); box-shadow:0 10px 26px -8px rgba(255,60,160,.6)}
+  .toast{position:fixed; left:50%; bottom:22px; transform:translate(-50%,80px); background:var(--ink); color:var(--bg); padding:11px 18px; border-radius:10px; font-weight:700; font-size:14px; z-index:99; transition:transform .3s; box-shadow:var(--shadow)}
+  .toast.show{transform:translate(-50%,0)}
+  footer{border-top:1px solid var(--line); padding:22px 0 34px; color:var(--muted); font-size:13.5px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap}
+  footer a{color:var(--muted); font-weight:600}
+
+  /* Sections are always visible by default — no scroll-reveal gating,
+     so content renders in every context (full-page captures included). */
+  .reveal{opacity:1; transform:none}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#top"><span class="dot">YY</span> Yifei Yang</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a class="cta" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="wrap hero-in">
+      <div>
+        <span class="status-pill"><span class="pulse"></span> Open to Summer 2027 internships — SWE · Data · Quant · AI</span>
+        <h1>Yifei Yang<span class="cn">杨逸飞</span></h1>
+        <div class="type-line" aria-label="Roles"><span id="typer"></span><span class="caret"></span></div>
+        <p class="lede">Third-year (junior) Honours B.Sc. in <strong>Computer Science at the University of Toronto</strong> (Class of 2028). I build software end-to-end — from AI-driven fintech dashboards to event discovery apps — with clean architecture, real APIs, and tested, production-minded code.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">See my projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+          <a class="btn" href="https://github.com/YifeiYang369" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/yifei-yang-42749b32a" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.16h4.52V23H.24V8.16zM8.34 8.16h4.33v2.03h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3.01 5.42 6.92V23h-4.52v-7.1c0-1.7-.03-3.88-2.37-3.88-2.37 0-2.73 1.85-2.73 3.76V23H8.34V8.16z"/></svg>
+            LinkedIn</a>
+          <button class="btn" id="copyEmail" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            Copy email</button>
+        </div>
+        <div class="hero-meta">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Toronto, ON, Canada</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg> University of Toronto · Junior · CS '28</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z"/></svg> English · 中文 (native)</span>
+        </div>
+      </div>
+
+      <div class="terminal" aria-hidden="true">
+        <div class="term-head"><i class="r"></i><i class="y"></i><i class="g"></i><span>yifei@utoronto — zsh</span></div>
+        <div class="term-body" id="termBody"></div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat reveal"><b>CAD <em>$50K</em></b><span>International Merit Admission Award, U of T</span></div>
+        <div class="stat reveal"><b>3<em>+</em></b><span>Shipped projects — fintech, events, ML</span></div>
+        <div class="stat reveal"><b>RMB <em>¥20K</em></b><span>Revenue from the AI robotics program I led</span></div>
+        <div class="stat reveal"><b>5</b><span>Programming languages in active use</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">01</span><h2>Projects</h2></div>
+      <p class="sec-sub">Real builds with real data — industry-sponsored fintech, live event APIs, and applied machine learning. Filter by what you're hiring for.</p>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="chip" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="fintech" aria-pressed="false">FinTech / AI</button>
+        <button class="chip" data-filter="fullstack" aria-pressed="false">Full-stack & APIs</button>
+        <button class="chip" data-filter="ml" aria-pressed="false">ML / Data</button>
+      </div>
+      <div class="proj-grid">
+        <article class="proj reveal" data-cat="fintech fullstack">
+          <div class="tagrow"><span class="cat">FinTech · AI</span><span class="when">Sep 2026 — Present</span></div>
+          <h3>Savi Finance — AI-Powered Financial Dashboard</h3>
+          <p>Building AI-driven dashboard features with an industry-sponsored engineering team, extending a live FinTech app. I implemented reusable READY-result data structures and UI components that turn authorized account transactions into categorized monthly expense views.</p>
+          <div class="stack"><span>Node.js</span><span>JSON-RPC</span><span>Xcode</span><span>Integration Testing</span></div>
+          <div class="metric">Integrated the <em>generateSupportedWidgetView</em> JSON-RPC method end-to-end — API response to rendered widget.</div>
+        </article>
+        <article class="proj reveal" data-cat="fullstack">
+          <div class="tagrow"><span class="cat">Full-stack · APIs</span><span class="when">Course project</span></div>
+          <h3>Ticket Monster — Event Search Application</h3>
+          <p>Built the event-search feature of a collaborative Java application: location-based discovery with filtering by date, category, and distance, powered by live Ticketmaster data and Google Maps.</p>
+          <div class="stack"><span>Java</span><span>REST APIs</span><span>Ticketmaster API</span><span>Google Maps API</span></div>
+          <div class="metric">Structured with <em>Clean Architecture</em> — presentation, use-case, and data-access layers kept strictly separate.</div>
+        </article>
+
+        <article class="proj reveal" data-cat="ml">
+          <div class="tagrow"><span class="cat">ML · Data</span><span class="when">Personal project</span></div>
+          <h3>Movie Recommendation System</h3>
+          <p>A content-based recommender that scores similarity across genres, ratings, and metadata to surface relevant titles — with graph and tree data structures organizing movie relationships for fast traversal.</p>
+          <div class="stack"><span>Python</span><span>Content-Based Filtering</span><span>Graphs & Trees</span></div>
+          <div class="metric">Similarity engine over <em>genres + ratings + metadata</em>, not just popularity rankings.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">02</span><h2>Experience & Leadership</h2></div>
+      <p class="sec-sub">Teaching AI and robotics, leading teams, and running programs that delivered measurable results.</p>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="when">MAY 2025 — AUG 2025</div>
+          <h3>AI Robotics Program Lead</h3>
+          <div class="org">Hefei Modern Science & Technology Museum · Hefei, China</div>
+          <ul>
+            <li>Led an AI robotics training program combining programming instruction with hands-on hardware demonstrations; owned program execution and technical setup.</li>
+            <li>Organized team activities and program delivery, contributing to <strong>RMB 20,000 in revenue</strong>.</li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <div class="when">SEP 2026 — PRESENT</div>
+          <h3>Software Developer — Savi Finance (CSC301 Industry Project)</h3>
+          <div class="org">University of Toronto course project with an industry sponsor</div>
+          <ul>
+            <li>Extending an existing FinTech application with AI-assisted widget creation: prompt → scope confirmation → generated dashboard views.</li>
+            <li>Validated API results and rendering through functional and integration testing.</li>
+          </ul>
+        </div>
+        <div class="tl-item reveal">
+          <div class="when">LEADERSHIP</div>
+          <h3>Student Government President</h3>
+          <div class="org">High school student government</div>
+          <ul>
+            <li>Organized school-wide events and secured <strong>CAD $2,000+ in sponsorship</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">03</span><h2>Skills & Coursework</h2></div>
+      <p class="sec-sub">The stack I reach for — and the theory underneath it.</p>
+      <div class="skill-grid">
+        <div class="skill-card reveal">
+          <h3>// languages</h3>
+          <div class="stack"><span>Java</span><span>Python</span><span>C</span><span>JavaScript</span><span>SQL</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>// tools & technologies</h3>
+          <div class="stack"><span>Node.js</span><span>Git & GitHub</span><span>PostgreSQL</span><span>Linux</span><span>Xcode</span><span>REST APIs</span><span>JSON-RPC</span><span>Google Maps API</span></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>// engineering</h3>
+          <div class="stack"><span>Clean Architecture</span><span>OOP Design</span><span>API Integration</span><span>Functional Testing</span><span>Integration Testing</span><span>Debugging</span></div>
+        </div>
+      </div>
+      <div class="skill-card reveal" style="margin-top:14px">
+        <h3>// relevant coursework — University of Toronto</h3>
+        <div class="course-list stack"><span>Software Design</span><span>Data Structures & Algorithms</span><span>Machine Learning</span><span>Databases</span><span>Systems Programming</span></div>
+      </div>
+      <div class="award reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13l1.5 9-5-3-5 3 1.5-9"/></svg>
+        <div>
+          <b>International Merit Admission Award — CAD $50,000</b>
+          <p>Awarded on admission to the University of Toronto. Current GPA: 3.11 / 4.0, Honours B.Sc. in Computer Science, expected May 2028.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head"><span class="no">04</span><h2>About</h2></div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <p>I'm a third-year (junior) Computer Science student at the University of Toronto who likes software that ships and gets used. My current focus is the intersection of <strong>AI and everyday finance</strong> — at Savi Finance I'm helping turn raw transaction data into dashboard widgets people can actually understand at a glance.</p>
+          <p>Before university, I led an AI robotics program at a science museum in Hefei — teaching programming, running hardware demos, and managing delivery end-to-end. It taught me the other half of engineering: explaining technical ideas clearly and owning outcomes, not just code.</p>
+          <p>I'm looking for a <strong>Summer 2027 internship</strong> in software engineering, data, quant, or AI — Toronto first, and open to the US and beyond.</p>
+        </div>
+        <div class="about-card reveal">
+          <ul class="fact-list">
+            <li><span class="k">Based in</span><span class="v">Toronto, Ontario</span></li>
+            <li><span class="k">University</span><span class="v">University of Toronto</span></li>
+            <li><span class="k">Degree</span><span class="v">Honours B.Sc., Computer Science</span></li>
+            <li><span class="k">Year</span><span class="v">Junior — 3rd year</span></li>
+            <li><span class="k">Graduating</span><span class="v">May 2028</span></li>
+            <li><span class="k">Languages</span><span class="v">English · 中文</span></li>
+            <li><span class="k">Focus</span><span class="v">Full-stack · AI · FinTech</span></li>
+            <li><span class="k">Status</span><span class="v">Open to Summer 2027 roles</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div class="wrap">
+    <div class="contact-band reveal" id="contact">
+      <h2>Let's build something worth shipping.</h2>
+      <p>Recruiting for Summer 2027, collaborating on a project, or just want to talk CS at U of T? My inbox is open — I reply fast.</p>
+      <div class="contact-actions">
+        <a class="btn primary" href="mailto:yif.yang@mail.utoronto.ca">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/yifei-yang-42749b32a" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        <a class="btn" href="https://github.com/YifeiYang369" target="_blank" rel="noopener">Follow on GitHub</a>
+        <button class="btn" id="copyEmail2" type="button">Copy email address</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; padding:0 20px">
+    <span>© 2026 Yifei Yang · Toronto, ON</span>
+    <span><a href="https://github.com/YifeiYang369" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/yifei-yang-42749b32a" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:yif.yang@mail.utoronto.ca">yif.yang@mail.utoronto.ca</a></span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status">Email copied — yif.yang@mail.utoronto.ca</div>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---- rotating role typer ---- */
+  var roles = ["Software Developer", "Junior CS Student @ U of T", "AI × FinTech Builder", "Full-Stack Engineer", "Robotics Instructor"];
+  var typer = document.getElementById("typer");
+  if (reduce) { typer.textContent = roles[0]; }
+  else {
+    var ri = 0, ci = roles[0].length, deleting = true, timer;
+    typer.textContent = roles[0];
+    function tick(){
+      var word = roles[ri];
+      if (deleting) {
+        ci--;
+        typer.textContent = word.slice(0, ci);
+        if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; timer = setTimeout(tick, 350); return; }
+        timer = setTimeout(tick, 34);
+      } else {
+        var next = roles[ri];
+        ci++;
+        typer.textContent = next.slice(0, ci);
+        if (ci === next.length) { deleting = true; timer = setTimeout(tick, 1900); return; }
+        timer = setTimeout(tick, 62);
+      }
+    }
+    setTimeout(tick, 1600);
+  }
+
+  /* ---- terminal typing ---- */
+  var lines = [
+    '<span class="c"># whoami</span>',
+    '<span class="g">$</span> yifei.yang <span class="c">— Junior CS @ UofT, class of 2028</span>',
+    '',
+    '<span class="k">const</span> yifei = {',
+    '  focus:   <span class="s">"AI × FinTech, full-stack apps"</span>,',
+    '  stack:   [<span class="s">"Java"</span>, <span class="s">"Python"</span>, <span class="s">"JavaScript"</span>, <span class="s">"Node.js"</span>],',
+    '  current: <span class="s">"Savi Finance — AI dashboard widgets"</span>,',
+    '  seeking: <span class="s">"Summer 2027 internship"</span>',
+    '};',
+    '',
+    '<span class="g">$</span> yifei.<span class="f">ship</span>() <span class="c">// let\'s build</span>'
+  ];
+  var term = document.getElementById("termBody");
+  var fullHTML = lines.join("\n");
+  if (reduce) {
+    term.innerHTML = fullHTML;
+  } else {
+    // Type plain-text progressively, then swap in highlighted version.
+    var plain = lines.map(function(l){ var d = document.createElement("div"); d.innerHTML = l; return d.textContent; }).join("\n");
+    var i = 0;
+    function typeTerm(){
+      i += 2 + Math.floor(Math.random() * 3);
+      if (i >= plain.length) { term.innerHTML = fullHTML + ' <span class="caret"></span>'; return; }
+      var partial = plain.slice(0, i);
+      term.textContent = partial;
+      var c = document.createElement("span"); c.className = "caret"; term.appendChild(c);
+      setTimeout(typeTerm, 18);
+    }
+    setTimeout(typeTerm, 400);
+  }
+
+  /* ---- project filters ---- */
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".chip"));
+  var projs = Array.prototype.slice.call(document.querySelectorAll(".proj"));
+  chips.forEach(function(chip){
+    chip.addEventListener("click", function(){
+      chips.forEach(function(c){ c.setAttribute("aria-pressed", "false"); });
+      chip.setAttribute("aria-pressed", "true");
+      var f = chip.getAttribute("data-filter");
+      projs.forEach(function(p){
+        var show = f === "all" || (p.getAttribute("data-cat") || "").split(" ").indexOf(f) !== -1;
+        p.classList.toggle("hidden", !show);
+      });
+    });
+  });
+
+  /* ---- copy email ---- */
+  var toast = document.getElementById("toast"), toastTimer;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove("show"); }, 2400);
+  }
+  function copyEmail(){
+    var email = "yif.yang@mail.utoronto.ca";
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(email).then(function(){ showToast("Email copied — " + email); }, function(){ showToast(email); });
+    } else { showToast(email); }
+  }
+  document.getElementById("copyEmail").addEventListener("click", copyEmail);
+  document.getElementById("copyEmail2").addEventListener("click", copyEmail);
+
+  /* (No scroll-reveal gating: all section content is visible on load.) */
+})();
+</script>
+</body>
+</html>
